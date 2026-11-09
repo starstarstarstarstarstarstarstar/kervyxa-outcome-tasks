@@ -5,7 +5,8 @@ function uniqueBy(items, key) {
   const getKey = typeof key === "function" ? key : (item) => item[key];
   const seen = new Map();
   for (const item of items) {
-    seen.set(getKey(item), item);
+    const k = getKey(item);
+    if (!seen.has(k)) seen.set(k, item);
   }
   return [...seen.values()];
 }
