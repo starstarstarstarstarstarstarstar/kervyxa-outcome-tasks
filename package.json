@@ -1,0 +1,10 @@
+{
+  "name": "luhn-check",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "luhn.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
