@@ -1,0 +1,10 @@
+{
+  "name": "slugify-title",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "slug.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
