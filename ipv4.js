@@ -4,7 +4,7 @@ function parseIpv4(s) {
   if (parts.length !== 4) return null;
   const out = [];
   for (const p of parts) {
-    if (!/^\d{1,3}$/.test(p)) return null;
+    if (!/^(0|[1-9]\d{0,2})$/.test(p)) return null;
     const n = Number(p);
     if (n > 255) return null;
     out.push(n);
