@@ -1,0 +1,10 @@
+{
+  "name": "path-normalize",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "posix-path.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
