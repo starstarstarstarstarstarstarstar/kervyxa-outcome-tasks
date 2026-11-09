@@ -1,0 +1,10 @@
+{
+  "name": "csv-field-split",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "csv.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
