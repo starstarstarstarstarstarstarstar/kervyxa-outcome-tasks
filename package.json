@@ -1,0 +1,1 @@
+{"name":"run-length-encode","version":"1.0.0","private":true,"license":"MIT","main":"rle.js","scripts":{"test":"node test.js"}}
