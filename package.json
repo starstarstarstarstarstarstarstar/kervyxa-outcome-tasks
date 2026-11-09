@@ -1,0 +1,1 @@
+{"name":"anagram-groups","version":"1.0.0","private":true,"license":"MIT","main":"anagrams.js","scripts":{"test":"node test.js"}}
