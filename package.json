@@ -1,0 +1,10 @@
+{
+  "name": "temperature-convert",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "temp.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
