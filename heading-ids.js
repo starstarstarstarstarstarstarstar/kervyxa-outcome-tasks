@@ -13,7 +13,7 @@ function headingIds(md) {
     const mt = /^(#{1,6})\s+(.+?)\s*$/.exec(line);
     if (!mt) continue;
     const base = slug(mt[2]);
-    let n = seen.get(base) || 1;
+    let n = seen.get(base) || 0;
     let id = base;
     while (used.has(id)) {
       n++;
