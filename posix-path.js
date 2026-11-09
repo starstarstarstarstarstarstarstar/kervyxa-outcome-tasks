@@ -6,7 +6,7 @@ function normalize(p) {
     if (seg === '' || seg === '.') continue;
     if (seg === '..') {
       if (out.length && out[out.length - 1] !== '..') out.pop();
-      else out.push('..');
+      else if (!abs) out.push('..');
     } else out.push(seg);
   }
   const r = out.join('/');
