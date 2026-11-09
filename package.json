@@ -1,0 +1,10 @@
+{
+  "name": "tsv-to-records",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "tsv.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
