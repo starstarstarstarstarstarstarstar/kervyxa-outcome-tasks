@@ -1,0 +1,10 @@
+{
+  "name": "natural-sort",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "natsort.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
