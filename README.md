@@ -1,0 +1,77 @@
+# kervyxa-outcome-tasks
+
+Small JavaScript repositories used as Kervyxa Outcome Contracts. Each task lives on its own
+orphan branch `<slug>` (the base commit a contract freezes); `npm test` = `node test.js`.
+
+- `anagram-groups`: Make groupAnagrams ignore letter case when matching words, while keeping each word as it was written.
+- `array-diff`: Make arrayDiff count repeated values, so extra copies are reported as added or removed.
+- `balanced-brackets`: Make firstError report the position of the earliest bracket that is never closed, instead of the text length.
+- `base64url-codec`: encode must replace every plus and slash in the output, not only the first of each.
+- `binary-search-bounds`: upperBound must return the index after the last element equal to the value, even when duplicates exist.
+- `byte-size-format`: Make the byte size formatter move up a unit when rounding to one decimal reaches 1024.
+- `caesar-shift`: Make shift handle negative shift amounts, so shifting back by n undoes shifting forward by n.
+- `camel-case`: Make the camel case converter lower case the rest of each later word, so HTTP becomes Http.
+- `chunk-array`: Make chunk throw a RangeError when the chunk size is not a whole number of at least 1.
+- `cidr-contains`: contains must treat a /0 block as matching every valid IPv4 address.
+- `color-contrast-ratio`: contrastRatio must accept three digit hex colors such as #fff and treat them as six digit colors.
+- `cookie-header-parse`: parseCookies() must keep the first value when a cookie name appears more than once.
+- `cron-field-parse`: A step in a cron field must count from the start of its range, not from zero.
+- `csv-field-split`: Make the CSV line splitter turn a doubled quote inside a quoted field into one quote character.
+- `csv-row-quote`: toCsvRow() must put quotes around fields that contain a line break, as well as commas and quotes.
+- `deep-merge`: Merging two objects must replace arrays from the second object instead of joining them to the first.
+- `dotenv-parse`: parse() must accept lines that start with export, such as export API_URL=https://x.test.
+- `duration-format`: Make the duration formatter return 0s for zero seconds instead of empty text.
+- `fibonacci-bigint`: fib(n) must return the exact nth Fibonacci number as a decimal string, even for very large n.
+- `file-extension-split`: splitName() must treat .tar.gz, .tar.bz2 and .tar.xz as one extension.
+- `flatten-depth`: Make flattenDepth flatten exactly the requested number of nesting levels, no more.
+- `fraction-reduce`: Make reduce and add always return fractions with a positive denominator, moving any minus sign to the numerator.
+- `gcd-lcm`: Make gcd, lcm, gcdAll and lcmAll never return negative numbers, and make lcm return 0 when either value is 0.
+- `glob-match`: Make the glob matcher stop the star wildcard at slashes so it matches one path segment only.
+- `group-by-key`: Make groupBy work when a group key has the same name as a built-in object property.
+- `hex-rgb-convert`: Make the RGB to hex converter always write two hex digits for each color channel.
+- `histogram-bins`: histogram() must count the largest value in the last bin instead of dropping it.
+- `html-escape`: With preserveEntities on, escapeHtml must also keep numeric entities such as &#39; and &#x27; unchanged.
+- `http-header-parse`: parseHeaders() must join repeated headers with a comma and space instead of keeping only the last one.
+- `infix-tokenize`: Make tokenize treat a minus sign in unary position as part of the number that follows it.
+- `ini-parse`: Quoted INI values must lose their quotes and keep any semicolon or hash characters inside them.
+- `interval-merge`: Make the interval merge function join intervals that only touch, like [1,2] and [2,3].
+- `ipv4-parse`: parseIpv4 must reject address parts written with leading zeros, such as 01 or 007.
+- `isbn-validate`: Make the ISBN checker accept X as the last character of a valid ISBN-10.
+- `iso-week-number`: Make isoWeek report the correct ISO year for dates near New Year, not just the calendar year.
+- `json-pointer-get`: Make the JSON pointer lookup decode ~01 as the key ~1, following RFC 6901 order of decoding.
+- `leap-year-days`: Make isLeapYear and daysInMonth follow the full Gregorian leap year rule, including century years.
+- `length-unit-convert`: convert() must use the real length of a mile, 1609.344 metres, when converting to or from miles.
+- `levenshtein-distance`: Make the edit distance function return the other string's length when one string is empty.
+- `log-line-parse`: parseLog() must read key=value fields whose value is in double quotes and contains spaces.
+- `lru-cache`: Reading a key from the cache must mark it as most recently used so it is evicted last.
+- `luhn-check`: Make the Luhn check double every second digit from the right, so numbers with an odd length work.
+- `markdown-heading-ids`: Repeated headings must get ids with suffixes -1, -2 and so on, starting at -1 for the second one.
+- `matrix-transpose`: Make transpose handle rows of different lengths and empty matrices without holes or errors.
+- `median-mode`: median() must sort numbers by value, so lists with numbers of different digit counts give the right middle.
+- `mime-type-lookup`: mimeType() must look at the last extension of a file name, so archive.tar.gz gives application/gzip.
+- `money-round`: Rounding a decimal string must send exact halves to the nearest even digit, not always upward.
+- `natural-sort`: naturalSort() must compare runs of digits by number, so file9 comes before file10.
+- `number-to-words`: toWords must leave out the million group when it is zero, so 5000 reads five thousand.
+- `ordinal-suffix`: Make ordinal give the right suffix for numbers that end in 11, 12 or 13.
+- `page-range-parse`: Make the page list parser return page numbers in numeric order, not text order.
+- `path-normalize`: normalize must drop parent segments that try to climb above the root of an absolute path.
+- `percent-change`: percentChange(from, to) must handle a starting value of zero instead of printing NaN or Infinity.
+- `prime-sieve`: primesUpTo(n) must list every prime up to and including n, even when n is a perfect square.
+- `query-string-parse`: Make the query string parser collect repeated keys into an array in the order they appear.
+- `roman-numerals`: Make the number to Roman numeral converter produce CM for nine hundred and every number that uses it.
+- `rpn-evaluate`: Make evaluate throw when the expression is empty or leaves more than one value.
+- `run-length-encode`: Make decode restore runs of digit characters, so encode followed by decode returns the original text.
+- `semver-compare`: Make version comparison order numeric prerelease parts by number, as the semver rules say.
+- `slugify-title`: Make slug creation join words with one hyphen and leave no hyphen at the start or end.
+- `temperature-convert`: convert() must round to one decimal with halves going away from zero, and never return negative zero.
+- `text-table-align`: table must size each column from the widest cell in every row, not only from the first row.
+- `title-case`: titleCase() must capitalise every part of a hyphenated word, such as State-Of-The-Art.
+- `topo-sort`: Make the topological sort throw a cycle error when a node depends on itself.
+- `truncate-ellipsis`: truncate() must return text no longer than max characters, counting the three dots, and cut at a word boundary.
+- `tsv-to-records`: parseTsv must keep empty cells and spaces in place instead of trimming whole rows.
+- `unique-by-key`: Make uniqueBy keep the first item for each key, in first-seen order, instead of the last.
+- `url-join`: joinUrl must fix slashes only where parts meet and leave double slashes inside a part untouched.
+- `uuid-format-check`: isUuid must check the variant digit, so only 8, 9, a or b is accepted in that position.
+- `version-range-match`: satisfies() must treat a caret range on a 0.x version as limited to the same minor version.
+- `word-wrap`: Make the word wrapper keep existing line breaks and blank lines, wrapping each line on its own.
+- `zip-longest`: Make zipLongest keep real values such as 0, empty strings and false, and fill only missing positions.
