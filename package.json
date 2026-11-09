@@ -1,0 +1,10 @@
+{
+  "name": "number-to-words",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "words.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
