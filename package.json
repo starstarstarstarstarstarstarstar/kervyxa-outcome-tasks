@@ -1,0 +1,10 @@
+{
+  "name": "length-unit-convert",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "length.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
