@@ -14,7 +14,7 @@ function parseCookies(header) {
     const name = part.slice(0, i).trim();
     const raw = part.slice(i + 1).trim();
     if (name === "") continue;
-    out[name] = decode(raw);
+    if (!Object.prototype.hasOwnProperty.call(out, name)) out[name] = decode(raw);
   }
   return out;
 }
