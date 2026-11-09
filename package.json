@@ -1,0 +1,10 @@
+{
+  "name": "ini-parse",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "ini.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
