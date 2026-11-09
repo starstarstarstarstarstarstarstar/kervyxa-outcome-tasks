@@ -5,7 +5,7 @@ function zipLongest(arrays, fill = null) {
   const length = Math.max(0, ...arrays.map((a) => a.length));
   const out = [];
   for (let i = 0; i < length; i++) {
-    out.push(arrays.map((a) => a[i] || fill));
+    out.push(arrays.map((a) => i < a.length ? a[i] : fill));
   }
   return out;
 }
