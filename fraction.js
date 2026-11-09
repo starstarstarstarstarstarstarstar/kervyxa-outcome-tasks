@@ -8,10 +8,17 @@ function gcd(a, b) {
 }
 
 // Reduce n/d to lowest terms and return [numerator, denominator].
+// The denominator is always positive and the sign sits on the numerator.
 function reduce(n, d) {
   if (d === 0) throw new Error("denominator is zero");
   const g = gcd(n, d);
-  return [n / g, d / g];
+  n = n / g;
+  d = d / g;
+  if (d < 0) {
+    n = 0 - n;
+    d = 0 - d;
+  }
+  return [n, d];
 }
 
 // Add two fractions given as [numerator, denominator] pairs.
