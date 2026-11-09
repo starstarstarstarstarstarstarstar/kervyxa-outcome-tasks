@@ -1,0 +1,10 @@
+{
+  "name": "text-table-align",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "text-table.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
