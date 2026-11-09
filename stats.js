@@ -1,6 +1,6 @@
 function median(values) {
   if (values.length === 0) return null;
-  const s = values.slice().sort();
+  const s = values.slice().sort((a, b) => a - b);
   const mid = Math.floor(s.length / 2);
   return s.length % 2 === 1 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
 }
