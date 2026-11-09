@@ -1,0 +1,1 @@
+{"name":"rpn-evaluate","version":"1.0.0","private":true,"license":"MIT","main":"rpn.js","scripts":{"test":"node test.js"}}
