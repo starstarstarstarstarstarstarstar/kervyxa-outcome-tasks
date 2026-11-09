@@ -14,7 +14,7 @@ function parseHeaders(raw) {
     }
     const name = line.slice(0, i).trim().toLowerCase();
     const value = line.slice(i + 1).trim();
-    out[name] = value;
+    out[name] = Object.prototype.hasOwnProperty.call(out, name) ? out[name] + ", " + value : value;
     last = name;
   }
   return out;
