@@ -1,0 +1,1 @@
+{"name":"fraction-reduce","version":"1.0.0","private":true,"license":"MIT","main":"fraction.js","scripts":{"test":"node test.js"}}
