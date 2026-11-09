@@ -7,7 +7,7 @@ function isoWeek(year, month, day) {
   dt.setUTCDate(dt.getUTCDate() + 4 - dow);
   const jan1 = Date.UTC(dt.getUTCFullYear(), 0, 1);
   const week = Math.ceil(((dt.getTime() - jan1) / 86400000 + 1) / 7);
-  return { year, week };
+  return { year: dt.getUTCFullYear(), week };
 }
 
 module.exports = { isoWeek };
