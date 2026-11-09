@@ -1,0 +1,10 @@
+{
+  "name": "fibonacci-bigint",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "fib.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
