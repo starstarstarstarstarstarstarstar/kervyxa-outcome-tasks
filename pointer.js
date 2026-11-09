@@ -1,6 +1,6 @@
 'use strict';
 function unescapeToken(token) {
-  return token.replace(/~0/g, '~').replace(/~1/g, '/');
+  return token.replace(/~1/g, '/').replace(/~0/g, '~');
 }
 function get(doc, pointer) {
   if (pointer === '') return doc;
