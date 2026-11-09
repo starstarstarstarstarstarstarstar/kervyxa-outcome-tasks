@@ -1,0 +1,10 @@
+{
+  "name": "duration-format",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "duration.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
