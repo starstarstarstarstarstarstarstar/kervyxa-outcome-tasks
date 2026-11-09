@@ -1,0 +1,1 @@
+{"name":"gcd-lcm","version":"1.0.0","private":true,"license":"MIT","main":"numtheory.js","scripts":{"test":"node test.js"}}
