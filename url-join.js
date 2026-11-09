@@ -5,6 +5,6 @@ function joinUrl(...parts) {
     if (s === '') continue;
     out = out === '' ? s : out.replace(/\/+$/, '') + '/' + s.replace(/^\/+/, '');
   }
-  return out.replace(/([^:]\/)\/+/g, '$1');
+  return out;
 }
 module.exports = { joinUrl };
