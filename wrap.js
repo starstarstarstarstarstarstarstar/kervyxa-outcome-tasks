@@ -18,6 +18,9 @@ function wrap(text, width) {
   if (!Number.isInteger(width) || width < 1) {
     throw new RangeError('width must be a whole number of 1 or more');
   }
-  return wrapLine(String(text), width);
+  return String(text)
+    .split('\n')
+    .map((line) => wrapLine(line, width))
+    .join('\n');
 }
 module.exports = { wrap };
