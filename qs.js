@@ -11,7 +11,9 @@ function parse(input) {
     const i = part.indexOf('=');
     const key = decode(i < 0 ? part : part.slice(0, i));
     const value = i < 0 ? '' : decode(part.slice(i + 1));
-    out[key] = value;
+    if (!Object.prototype.hasOwnProperty.call(out, key)) out[key] = value;
+    else if (Array.isArray(out[key])) out[key].push(value);
+    else out[key] = [out[key], value];
   }
   return out;
 }
