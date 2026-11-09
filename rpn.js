@@ -23,7 +23,8 @@ function evaluate(expr) {
       stack.push(n);
     }
   }
-  return stack[stack.length - 1];
+  if (stack.length !== 1) throw new Error("expected exactly one result, found " + stack.length);
+  return stack[0];
 }
 
 module.exports = { evaluate };
