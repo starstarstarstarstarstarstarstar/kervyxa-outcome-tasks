@@ -1,0 +1,10 @@
+{
+  "name": "cidr-contains",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "cidr.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
