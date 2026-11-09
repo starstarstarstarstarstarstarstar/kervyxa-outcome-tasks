@@ -1,0 +1,10 @@
+{
+  "name": "deep-merge",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "deep-merge.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
