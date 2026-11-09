@@ -14,7 +14,7 @@ function encode(text) {
 }
 
 function decode(text) {
-  return text.replace(/(\d+):(\D)/g, (_, count, ch) => ch.repeat(Number(count)));
+  return text.replace(/(\d+):([\s\S])/g, (_, count, ch) => ch.repeat(Number(count)));
 }
 
 module.exports = { encode, decode };
