@@ -1,0 +1,10 @@
+{
+  "name": "prime-sieve",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "sieve.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
