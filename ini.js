@@ -1,7 +1,7 @@
 function parseValue(raw) {
   const v = raw.trim();
   const q = v[0];
-  
+  if ((q === "'" || q === '"') && v.indexOf(q, 1) > 0) return v.slice(1, v.indexOf(q, 1));
   const c = /\s[;#]/.exec(v);
   return (c ? v.slice(0, c.index) : v).trim();
 }
