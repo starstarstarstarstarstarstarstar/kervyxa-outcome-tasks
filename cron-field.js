@@ -19,7 +19,7 @@ function parseField(field, min, max) {
       hi = Number(r[2]);
     }
     if (lo < min || hi > max || lo > hi) throw new RangeError('out of range: ' + part);
-    for (let v = lo; v <= hi; v++) if (v % step === 0) out.add(v);
+    for (let v = lo; v <= hi; v += step) out.add(v);
   }
   return [...out].sort((a, b) => a - b);
 }
