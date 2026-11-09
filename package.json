@@ -1,0 +1,10 @@
+{
+  "name": "topo-sort",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "topo.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
