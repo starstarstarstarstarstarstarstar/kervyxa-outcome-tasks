@@ -10,7 +10,7 @@ function merge(list) {
   const out = [];
   for (const item of items) {
     const last = out[out.length - 1];
-    if (last && item[0] < last[1]) {
+    if (last && item[0] <= last[1]) {
       last[1] = Math.max(last[1], item[1]);
     } else {
       out.push(item);
