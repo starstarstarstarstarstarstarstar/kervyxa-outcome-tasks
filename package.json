@@ -1,0 +1,10 @@
+{
+  "name": "cookie-header-parse",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "cookies.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
