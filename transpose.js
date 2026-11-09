@@ -2,10 +2,15 @@
 
 // Transpose an array of rows into an array of columns.
 function transpose(matrix) {
-  const width = matrix[0].length;
+  let width = 0;
+  for (const row of matrix) width = Math.max(width, row.length);
   const out = [];
   for (let j = 0; j < width; j++) {
-    out.push(matrix.map((row) => row[j]));
+    const column = [];
+    for (const row of matrix) {
+      if (j < row.length) column.push(row[j]);
+    }
+    out.push(column);
   }
   return out;
 }
