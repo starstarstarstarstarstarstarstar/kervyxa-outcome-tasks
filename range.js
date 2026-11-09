@@ -18,7 +18,9 @@ function satisfies(version, range) {
   const lo = parse(range.slice(1));
   let hi;
   if (op === "~") hi = [lo[0], lo[1] + 1, 0];
-  else hi = [lo[0] + 1, 0, 0];
+  else if (lo[0] > 0) hi = [lo[0] + 1, 0, 0];
+  else if (lo[1] > 0) hi = [0, lo[1] + 1, 0];
+  else hi = [0, 0, lo[2] + 1];
   return cmp(v, lo) >= 0 && cmp(v, hi) < 0;
 }
 
