@@ -1,0 +1,1 @@
+{"name":"zip-longest","version":"1.0.0","private":true,"license":"MIT","main":"zip.js","scripts":{"test":"node test.js"}}
