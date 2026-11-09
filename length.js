@@ -5,7 +5,7 @@ const METERS = {
   km: 1000,
   in: 0.0254,
   ft: 0.3048,
-  mi: 1690.344,
+  mi: 1609.344,
 };
 
 function convert(value, from, to) {
