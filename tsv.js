@@ -7,7 +7,7 @@ function parseTsv(text) {
     .slice(1)
     .filter((l) => l !== '')
     .map((l) => {
-      const cells = l.trim().split('\t');
+      const cells = l.split('\t');
       const o = {};
       head.forEach((h, i) => {
         o[h] = cells[i] === undefined ? '' : cells[i];
