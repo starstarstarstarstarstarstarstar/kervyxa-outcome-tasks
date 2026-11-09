@@ -1,0 +1,10 @@
+{
+  "name": "markdown-heading-ids",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "heading-ids.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
