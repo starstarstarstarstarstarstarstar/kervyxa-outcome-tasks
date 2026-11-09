@@ -8,7 +8,6 @@ function deepMerge(a, b) {
     const av = out[k];
     const bv = b[k];
     if (isPlain(av) && isPlain(bv)) out[k] = deepMerge(av, bv);
-    else if (Array.isArray(av) && Array.isArray(bv)) out[k] = av.concat(bv);
     else out[k] = bv;
   }
   return out;
