@@ -1,0 +1,10 @@
+{
+  "name": "base64url-codec",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "b64url.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
