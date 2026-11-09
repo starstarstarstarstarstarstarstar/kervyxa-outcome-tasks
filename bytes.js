@@ -11,6 +11,10 @@ function formatBytes(n) {
     value /= 1024;
     unit++;
   }
+  if (Number(value.toFixed(1)) >= 1024 && unit < UNITS.length - 1) {
+    value /= 1024;
+    unit++;
+  }
   return value.toFixed(1) + ' ' + UNITS[unit];
 }
 module.exports = { formatBytes };
