@@ -1,0 +1,10 @@
+{
+  "name": "html-escape",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "html-escape.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
