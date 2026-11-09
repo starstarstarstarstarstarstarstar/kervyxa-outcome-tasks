@@ -1,9 +1,9 @@
 'use strict';
 function isbn10(s) {
-  if (!/^[0-9]{10}$/.test(s)) return false;
+  if (!/^[0-9]{9}[0-9Xx]$/.test(s)) return false;
   let sum = 0;
   for (let i = 0; i < 10; i++) {
-    const v = Number(s[i]);
+    const v = /x/i.test(s[i]) ? 10 : Number(s[i]);
     sum += v * (10 - i);
   }
   return sum % 11 === 0;
