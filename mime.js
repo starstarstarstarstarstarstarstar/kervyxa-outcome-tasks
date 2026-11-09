@@ -17,7 +17,9 @@ const TYPES = {
 };
 
 function mimeType(filename) {
-  const ext = (filename.split(".")[1] || "").toLowerCase();
+  const dot = filename.lastIndexOf(".");
+  if (dot < 1 || dot === filename.length - 1) return DEFAULT;
+  const ext = filename.slice(dot + 1).toLowerCase();
   return Object.prototype.hasOwnProperty.call(TYPES, ext) ? TYPES[ext] : DEFAULT;
 }
 
