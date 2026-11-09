@@ -1,0 +1,10 @@
+{
+  "name": "cron-field-parse",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "cron-field.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
