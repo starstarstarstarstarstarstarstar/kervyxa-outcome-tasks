@@ -1,0 +1,10 @@
+{
+  "name": "hex-rgb-convert",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "color.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
