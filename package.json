@@ -1,0 +1,10 @@
+{
+  "name": "csv-row-quote",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "csvrow.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
