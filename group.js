@@ -5,7 +5,9 @@ function groupBy(items, keyFn) {
   const out = {};
   for (const item of items) {
     const k = String(keyFn(item));
-    out[k] = out[k] || [];
+    if (!Object.prototype.hasOwnProperty.call(out, k)) {
+      Object.defineProperty(out, k, { value: [], enumerable: true, writable: true, configurable: true });
+    }
     out[k].push(item);
   }
   return out;
