@@ -4,7 +4,7 @@
 function groupAnagrams(words) {
   const groups = new Map();
   for (const w of words) {
-    const key = w.split("").sort().join("");
+    const key = w.toLowerCase().split("").sort().join("");
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(w);
   }
