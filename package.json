@@ -1,0 +1,1 @@
+{"name":"array-diff","version":"1.0.0","private":true,"license":"MIT","main":"diff.js","scripts":{"test":"node test.js"}}
