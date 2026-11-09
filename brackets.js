@@ -17,7 +17,7 @@ function firstError(text) {
       if (top.ch !== CLOSERS[ch]) return i;
     }
   }
-  return stack.length > 0 ? text.length : -1;
+  return stack.length > 0 ? stack[0].index : -1;
 }
 
 module.exports = { firstError };
