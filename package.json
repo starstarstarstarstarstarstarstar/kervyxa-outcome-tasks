@@ -1,0 +1,1 @@
+{"name":"group-by-key","version":"1.0.0","private":true,"license":"MIT","main":"group.js","scripts":{"test":"node test.js"}}
