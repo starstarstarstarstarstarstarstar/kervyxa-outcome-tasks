@@ -5,7 +5,7 @@ function parse(text) {
     if (line === "" || line.startsWith("#")) continue;
     const eq = line.indexOf("=");
     if (eq < 1) continue;
-    const key = line.slice(0, eq).trim();
+    const key = line.slice(0, eq).replace(/^export\s+/, "").trim();
     let v = line.slice(eq + 1).trim();
     const q = v.charAt(0);
     if ((q === '"' || q === "'") && v.lastIndexOf(q) > 0) {
