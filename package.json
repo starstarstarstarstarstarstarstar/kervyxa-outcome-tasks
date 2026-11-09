@@ -1,0 +1,10 @@
+{
+  "name": "isbn-validate",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "isbn.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
