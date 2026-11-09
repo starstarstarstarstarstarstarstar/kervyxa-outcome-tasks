@@ -1,0 +1,1 @@
+{"name":"balanced-brackets","version":"1.0.0","private":true,"license":"MIT","main":"brackets.js","scripts":{"test":"node test.js"}}
