@@ -15,7 +15,7 @@ function roundHalfEven(s, digits) {
     if (first > '5') up = true;
     else if (first < '5') up = false;
     else if (/[1-9]/.test(tail)) up = true;
-    else up = true;
+    else up = keep % 2n === 1n;
     digs = keep + (up ? 1n : 0n);
   }
   const str = digs.toString().padStart(digits + 1, '0');
