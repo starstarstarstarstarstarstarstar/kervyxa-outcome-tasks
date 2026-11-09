@@ -1,0 +1,10 @@
+{
+  "name": "title-case",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "titlecase.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
