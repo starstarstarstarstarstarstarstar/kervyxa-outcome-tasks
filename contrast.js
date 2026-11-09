@@ -1,5 +1,6 @@
 function parseHex(h) {
   let s = String(h).trim().replace(/^#/, '');
+  if (/^[0-9a-fA-F]{3}$/.test(s)) s = s.split('').map((c) => c + c).join('');
   if (!/^[0-9a-fA-F]{6}$/.test(s)) throw new Error('bad color: ' + h);
   return [0, 2, 4].map((i) => parseInt(s.slice(i, i + 2), 16));
 }
