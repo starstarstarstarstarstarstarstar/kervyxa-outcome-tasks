@@ -1,0 +1,10 @@
+{
+  "name": "glob-match",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "glob.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
