@@ -1,6 +1,10 @@
 const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to"]);
 
-const cap = (w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+const cap = (w) =>
+  w
+    .split("-")
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase())
+    .join("-");
 
 function titleCase(text) {
   const words = text.split(" ");
