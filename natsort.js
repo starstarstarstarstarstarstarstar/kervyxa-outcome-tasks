@@ -5,6 +5,10 @@ function cmp(a, b) {
   for (let i = 0; i < n; i++) {
     const p = pa[i];
     const q = pb[i];
+    if (/^\d/.test(p) && /^\d/.test(q)) {
+      if (Number(p) === Number(q)) continue;
+      return Number(p) < Number(q) ? -1 : 1;
+    }
     const x = p.toLowerCase();
     const y = q.toLowerCase();
     if (x !== y) return x < y ? -1 : 1;
