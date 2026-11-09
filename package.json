@@ -1,0 +1,10 @@
+{
+  "name": "color-contrast-ratio",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "contrast.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
