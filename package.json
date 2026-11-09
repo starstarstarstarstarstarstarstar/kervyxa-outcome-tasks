@@ -1,0 +1,10 @@
+{
+  "name": "levenshtein-distance",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "lev.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
