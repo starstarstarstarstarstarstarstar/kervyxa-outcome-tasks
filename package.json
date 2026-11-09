@@ -1,0 +1,10 @@
+{
+  "name": "interval-merge",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "intervals.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
