@@ -11,6 +11,6 @@ function format(seconds) {
   if (h > 0) parts.push(h + 'h');
   if (m > 0) parts.push(m + 'm');
   if (s > 0) parts.push(s + 's');
-  return parts.join(' ');
+  return parts.length === 0 ? '0s' : parts.join(' ');
 }
 module.exports = { format };
