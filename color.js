@@ -14,6 +14,7 @@ function rgbToHex(r, g, b) {
   for (const v of [r, g, b]) {
     if (!Number.isInteger(v) || v < 0 || v > 255) throw new RangeError('channel out of range');
   }
-  return '#' + r.toString(16) + g.toString(16) + b.toString(16);
+  const two = (v) => v.toString(16).padStart(2, '0');
+  return '#' + two(r) + two(g) + two(b);
 }
 module.exports = { hexToRgb, rgbToHex };
