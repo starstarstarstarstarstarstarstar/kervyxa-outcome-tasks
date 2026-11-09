@@ -1,0 +1,10 @@
+{
+  "name": "median-mode",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "stats.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
