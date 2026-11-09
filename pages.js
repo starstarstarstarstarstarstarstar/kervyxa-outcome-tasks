@@ -16,6 +16,6 @@ function parsePages(text) {
       throw new SyntaxError('bad page: ' + part);
     }
   }
-  return Array.from(set).sort();
+  return Array.from(set).sort((a, b) => a - b);
 }
 module.exports = { parsePages };
