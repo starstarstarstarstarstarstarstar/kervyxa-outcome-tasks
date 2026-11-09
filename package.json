@@ -1,0 +1,10 @@
+{
+  "name": "ipv4-parse",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "ipv4.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
