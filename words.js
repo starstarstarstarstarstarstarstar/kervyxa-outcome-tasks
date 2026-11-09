@@ -18,7 +18,7 @@ function toWords(n) {
   const parts = [];
   for (const [size, name] of [[1000000, 'million'], [1000, 'thousand']]) {
     const q = Math.floor(n / size);
-    if (n >= 1000) {
+    if (q > 0) {
       parts.push(below1000(q) + ' ' + name);
       n %= size;
     }
