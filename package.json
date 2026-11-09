@@ -1,0 +1,10 @@
+{
+  "name": "roman-numerals",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "roman.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
