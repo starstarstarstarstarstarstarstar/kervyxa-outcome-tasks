@@ -9,7 +9,7 @@ function histogram(values, bins) {
   const counts = new Array(bins).fill(0);
   for (const v of values) {
     const idx = width === 0 ? 0 : Math.floor((v - min) / width);
-    if (idx < bins) counts[idx]++;
+    counts[Math.min(idx, bins - 1)]++;
   }
   return { edges, counts };
 }
