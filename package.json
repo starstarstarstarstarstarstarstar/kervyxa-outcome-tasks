@@ -1,0 +1,10 @@
+{
+  "name": "page-range-parse",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "pages.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
