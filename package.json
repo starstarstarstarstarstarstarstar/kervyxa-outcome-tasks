@@ -1,0 +1,10 @@
+{
+  "name": "money-round",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "money.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
