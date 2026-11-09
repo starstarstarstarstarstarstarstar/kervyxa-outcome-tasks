@@ -1,5 +1,6 @@
 function round1(x) {
-  return Math.round(x * 10) / 10;
+  const r = (Math.sign(x) * Math.round(Math.abs(x) * 10)) / 10;
+  return r === 0 ? 0 : r;
 }
 
 const toC = {
