@@ -8,7 +8,7 @@ class LRUCache {
   has(key) { return this.map.has(key); }
   get(key) {
     if (!this.map.has(key)) return undefined;
-    const v = this.map.get(key); return v;
+    const v = this.map.get(key); this.map.delete(key); this.map.set(key, v); return v;
   }
   set(key, value) {
     if (this.map.has(key)) this.map.delete(key);
