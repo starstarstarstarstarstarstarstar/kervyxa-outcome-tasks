@@ -15,6 +15,7 @@ function contains(cidr, ip) {
   const a = toInt(ip);
   if (b === null || a === null || len === undefined || len === '') return false;
   if (!Number.isInteger(bits) || bits < 0 || bits > 32) return false;
+  if (bits === 0) return true;
   const mask = (0xffffffff << (32 - bits)) >>> 0;
   return ((a & mask) >>> 0) === ((b & mask) >>> 0);
 }
