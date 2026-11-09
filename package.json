@@ -1,0 +1,10 @@
+{
+  "name": "file-extension-split",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "split.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
