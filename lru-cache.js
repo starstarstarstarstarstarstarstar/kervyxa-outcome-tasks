@@ -1,0 +1,21 @@
+class LRUCache {
+  constructor(capacity) {
+    if (!Number.isInteger(capacity) || capacity < 1) throw new RangeError('capacity must be a positive integer');
+    this.capacity = capacity;
+    this.map = new Map();
+  }
+  get size() { return this.map.size; }
+  has(key) { return this.map.has(key); }
+  get(key) {
+    if (!this.map.has(key)) return undefined;
+    const v = this.map.get(key); return v;
+  }
+  set(key, value) {
+    if (this.map.has(key)) this.map.delete(key);
+    this.map.set(key, value);
+    if (this.map.size > this.capacity) this.map.delete(this.map.keys().next().value);
+    return this;
+  }
+  keys() { return [...this.map.keys()]; }
+}
+module.exports = { LRUCache };
