@@ -2,7 +2,8 @@
 function distance(a, b) {
   a = String(a);
   b = String(b);
-  if (!a || !b) return 0;
+  if (!a) return b.length;
+  if (!b) return a.length;
   let prev = [];
   for (let j = 0; j <= b.length; j++) prev.push(j);
   for (let i = 1; i <= a.length; i++) {
