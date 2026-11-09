@@ -1,7 +1,7 @@
-const PAIR = /([A-Za-z_][\w.]*)=(\S+)/g;
+const PAIR = /([A-Za-z_][\w.]*)=(?:"([^"]*)"|(\S+))/g;
 
 function valueOf(p) {
-  return p[2];
+  return p[2] !== undefined ? p[2] : p[3];
 }
 
 function parseLog(line) {
